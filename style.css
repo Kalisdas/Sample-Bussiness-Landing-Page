@@ -1,0 +1,618 @@
+body{
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box;
+    font-family:"Raleway", sans-serif, sans-serif;
+}
+.background{
+    background-image: url(./301407.jpg);
+    height: 100vh; 
+    background-size: cover;
+    background-image: fixed;
+}
+.header1{
+    height: 7vh;
+    background-color: rgba(9, 9, 11, 0.843);
+    color: whitesmoke;
+    align-items: center; 
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+}
+.topleft{
+    display: inline-block;
+    align-items: center;
+
+}
+#email{
+    margin-left: 10px ;
+}
+.topright{
+    display: inline-block;
+    align-items: center;
+    margin-left: 10px ;
+    cursor: pointer;
+}
+.navbar ul li{
+    padding: 10px  ;
+} 
+.navbar  li a{
+    color: whitesmoke;
+    text-decoration: none;
+    align-items: center;
+}
+.navbar li:hover .dropdown {
+    display: block;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.navbar {
+    transition: background-color 0.3s; 
+}
+.navbar ul li {
+    display: inline; 
+       margin-right: 0px;  
+}
+.navbar ul li:hover {
+    background-color: rgba(100, 86, 181, 0.817);
+    padding:  10px 10px 26px; 
+    color: black;
+}
+.navbar ul li:not(:hover) {
+    background-color: transparent;
+}
+#dots {
+    color: white;
+    visibility: hidden;
+}
+ #logo{
+    padding-left: 900px;
+    padding: 20px 400px;
+    margin-left: auto;
+}
+#email{
+    margin-right: auto;
+}
+.header2{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgba(5, 4, 50, 0.729);
+    height: 10vh;
+    position: sticky;
+    margin-top: 0px;
+}
+.topleft2{
+    color: whitesmoke;
+    padding-left: 40px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.para{
+    color: whitesmoke;
+    padding-left:100px;
+    padding-top:14%;
+}
+.started{
+    color: whitesmoke;
+    margin-left: 100px !important;
+    color: black;
+    padding: 10px;
+    border:1px solid white;
+    border-radius: 10px;
+}
+.background2{
+    height: 100vh;
+    display: flex;
+}
+.header3{
+    max-width: 40vw;
+    margin-left: 100px;
+}
+#image{
+    height:680px;
+    max-width :700px;
+    padding-top: 60px;
+}
+.bi-check-circle{
+    color: red;
+}
+svg{
+    margin: 5px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 10px;
+}
+.box{
+    display: grid;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    transition: all ease-in-out 0.3s;
+}
+.newcolor{
+    display: block;
+}
+.newcolor:hover h2{
+    color: white;
+}
+.heading{
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+.heading span:hover{
+    color: white;
+}
+.heading:hover{
+    color: white;
+}
+.heading >h3:hover{
+    color: white;   
+}
+.box:hover .heading:hover .heading span:hover{
+    color: white !important;
+}
+.box:hover{
+    transform:translateY(-20px);
+    background-color: red;
+    color: white;
+    transform: scaleY(1.1);
+}
+.box > .newcolor::after{
+    color: white;
+}
+.box::after{
+    color: white;
+}
+.box1{
+    margin-left: 40px;
+}
+.box2{
+    margin-left: 40px;
+}
+.box3{
+    margin-left: 40px;
+}
+.secondbox{
+    text-align: center;
+}
+.clients{
+    background-color: whitesmoke;
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 50px;
+    text-align: center;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+.clients:hover{
+    filter: grayscale(.1);
+}
+#logo{
+    height: 150px;
+    width: 100px;
+}
+.clientsText{
+    height: 200px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+.main{
+    letter-spacing: 10px;
+    position: absolute;
+    opacity: 0.1;
+    text-align: center;
+    padding-left: 500px;
+    margin-top: -20px;
+}
+.sub{
+    position: relative;
+    text-align: center;
+}
+.small-box{
+    height: 60px;
+    width: 60px;
+    margin-top:40px;
+    margin-left: 100px;
+    background-color: rgb(37, 33, 33);
+    position: absolute;
+    z-index: 10;
+}
+.small-box1{
+    height: 60px;
+    width: 60px;
+    margin-top:30px;
+    margin-left: 90px;
+    background-color: rgb(116, 111, 111);
+    position: relative;
+    z-index: -1;
+}
+.small-box:hover{
+    height: 60px;
+    width: 60px;
+    border: 1px solid red;
+    margin-top:40px;
+    margin-left: 100px;
+    background-color: white;
+}
+.background3{
+    height: 70vh;
+    background-image: url(./Coding\ Wallpapers\ 4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    padding-top: 80px;
+}
+.innerboxx{
+    width: 70vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+.portfolio{
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+.main1{
+    letter-spacing: 10px;
+    position: absolute;
+    opacity: 0.1;
+    text-align: center;
+    padding-left: 470px;
+    margin-top: -20px;
+}
+.sub1{
+    position: relative;
+    text-align: center;
+}
+.image-container{
+    height: 50vh;
+}
+.all .app .web .card{
+    height: 100px;
+    width: 200px;
+}
+.pricing{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main2{
+    letter-spacing: 10px;
+    position: absolute;
+    opacity: 0.1;
+    text-align: center;
+    padding-left: 510px;
+    margin-top: -20px;
+}
+.sub2{
+    position: relative;
+    text-align: center;
+}
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px; 
+}
+.boxx{
+    display: grid;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    color:grey;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+.boxx1{
+margin-left: 100px;
+background-color: whitesmoke;
+color: black;
+text-align: center;
+}
+.boxx2{
+    margin-left: 50px;
+    background-color: red;
+}
+.boxx3{
+    background-color: whitesmoke;
+}
+.sym{
+    color: red;
+    font-size: small;
+}
+.sym1{
+    color: red;
+    font-size:xx-large;
+}
+.sym2{
+    color:rgb(105, 99, 99)
+}
+.doller{
+margin-bottom: 250px;
+}
+.text{
+    padding: 20px;
+    line-height: 35px;
+}
+.line{
+    line-height: 35px;
+    margin-top: -20px;
+    text-decoration: line-through;
+    color:rgb(105, 99, 99)
+}
+.boxbutton{
+    color: white;
+    background-color: red;
+    box-shadow: none;
+    border: none;
+    padding: 5px;
+    width: 150px;
+    margin: 35px;
+}
+.boxx2{
+    color: white;
+    text-align: center;
+}
+.boxbutton1{
+    color: white;
+    background-color: rgb(230, 67, 67);
+    box-shadow: none;
+    border: none;
+    padding: 5px;
+    width: 150px;
+    margin: 10px;
+    
+}
+.boxx3{
+background-color: whitesmoke;
+color: black;
+text-align: center;
+}
+.boxbutton2{
+    color: white;
+    background-color: red;
+    box-shadow: none;
+    border: none;
+    width: 150px;
+    margin: 35px;
+}
+.main3{
+    letter-spacing: 20px;
+    position: absolute;
+    opacity: 0.1;
+    text-align: center;
+    padding-left: 535px;
+    margin-top: -20px;
+}
+.boox{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.boox1{
+    margin-left: 50px;
+}
+.boox2{
+    margin-left: 25px;
+}
+.innerbox1{
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 100px;
+    background-color: rgb(197, 190, 190);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.tittle{
+    text-align: center;
+}
+.innerbox1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main4{
+    letter-spacing: 20px;
+    position: absolute;
+    opacity: 0.1;
+    text-align: center;
+    padding-left: 470px;
+    margin-top: -20px;
+}
+.boxs{
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.boxs1{
+    width: 450px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 100px;
+    text-align: center;
+    color: gray;
+}
+.booxx2{
+margin-left: 20px;
+text-align: center;
+color: gray;
+}
+.logo2{
+    color: red;
+    padding-top: 10px;
+}
+.booxx3{
+margin-left: -50px;
+text-align: center;
+color: gray;
+}
+.map{
+    margin-left: 100px;
+    display: inline-block;
+}
+.formm{
+    width:480px ;
+    height:350px;
+    display: inline-block;
+    margin-left:20px ;
+    padding-top: 20px;
+    padding-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.formm input{
+    width: 200px;
+}
+.last{
+    display: flex;
+    margin-bottom: 80px;
+}
+#Subject{
+margin-top: 20px;
+width: 405px;
+padding: 5px;
+}
+#Message{
+    margin-top: 20px;
+    padding: 10px;
+}
+.lastbutton{
+    background-color: red;
+    color: rgb(237, 241, 244);
+    border:none ;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+footer{
+    height: 70vh;
+    background-color: black;
+    display: flex;
+}
+.infyrecbox{
+    width: 300px;
+    height: 300px;
+    border-top: 4px solid red;
+    margin-top: 75px;
+    margin-left: 100px;
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.footer1{
+   color: white;
+   height: 250px;
+   margin-top: 75px;
+   padding: 5px;
+   margin-left: 40px;
+   font-size:medium;
+}
+.fa-greater-than{
+    color: red;
+    padding: 5px;
+    font-size: x-small;
+}
+.footer1 p:hover{
+  color: red;
+  cursor: pointer;
+}
+.footer2{
+    color: white;
+    height: 250px;
+    margin-top: 75px;
+    padding: 5px;
+    margin-left: 30px;  
+    font-size:medium;
+}
+.fa-solidd{
+    padding-left: 20px;
+    font-size:medium;
+}
+.footer2 p:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .footer3{
+    color: white;
+    height: 250px;
+    margin-top: 75px;
+    padding: 5px;
+    margin-left: 40px;
+    font-size: small;
+  }
+  .footer3 p{
+    font-size: medium;
+  }
+  .Subscribe{
+    background-color: red;
+    padding: px;
+    color: white;
+    width: 100px;
+    border: none;
+    height: 35px;
+    font-size: medium;
+  }
+  .lastinput{
+    height: 35px;
+    border: none;
+    margin-top: 25px;
+    background-color: white;
+    width: 200px;
+  }
+  .inp{
+    height: 50px;
+    width: 350px;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+  }
+  .subbutton{
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: red;
+    color: white;
+    height: 31px;
+    border: none;
+    width: 100px;
+    font-size: medium;
+    position: absolute;
+  }
+  .lastfooter{
+    height: 30vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top : 50px;
+  }
